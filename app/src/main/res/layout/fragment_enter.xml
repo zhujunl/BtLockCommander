@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.fragment.EnterFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_profile"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_action_left" />
+
+        <Space
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:padding="50dp"
+            android:src="@drawable/ic_action_bluetooth_black"
+            android:background="@drawable/circle_shape"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <Space
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_action_right" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_device_name"
+        android:layout_centerInParent="true"
+        android:textSize="16sp"
+        android:layout_below="@id/ll_profile"
+        android:paddingTop="100dp"
+        android:gravity="start|center"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_device_mac"
+        android:layout_centerInParent="true"
+        android:textSize="16sp"
+        android:layout_below="@id/tv_device_name"
+        android:paddingTop="10dp"
+        android:gravity="start|center"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_serial_number"
+        android:layout_centerInParent="true"
+        android:textSize="16sp"
+        android:layout_below="@id/tv_device_mac"
+        android:paddingTop="10dp"
+        android:gravity="start|center"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
